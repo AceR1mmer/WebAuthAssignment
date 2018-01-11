@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="Cache/js/js3.js"></script>
+<link rel="stylesheet" type="text/css" href="Cache/css/csss.css" >
+<link rel="stylesheet" type="text/css" href="Cache/css/css2.css">
+
+</head>
+
+<body>
+
+<div id="thewrapper">
+
+  <header id="head">
+  <img class="logo" width="screen.width" src="cache/assets/images/logo.png"/>
+ <div class="boxed">
+    <nav id="nav">
+      <ol>
+        <a href="Index.html">Home</a> <a href="Products.html">Products</a> <a href="Play.html">Play</a> <a href="Community.html">Community/Contact Us</a>
+      </ol>
+    </nav>
+	</div>
+  </header>
+  
+ 
+ 
+ 
+ <canvas id="canvas" width="1000" height="1000" style="background: url('Cache/assets/images/image.jpeg')"></canvas>
+ <button onclick="javascript:clearArea();return true;">Clear Area</button>
+<input id="selWidth" type="range" min="1" max="20" value="1">
+<input id="selColour" type="color" value="#222222">
+  <div>
+      <button id="erase">Erase</button>
+      <button id="save">Save</button>
+      <button id="load">Load</button>
+    </div>
+ <script>
+ function clearArea() {
+		my_context.clearRect(0, 0, my_context.canvas.width, my_context.canvas.height);
+	}
+	</script>
+ 
+ 
+<script>
+	canvas = document.getElementById("canvas");
+	context = canvas.getContext("2d");
+	document.getElementById('erase').addEventListener('click', eraseCanvas, false);
+          document.getElementById('save').addEventListener('click', saveCanvas, false);
+          document.getElementById('load').addEventListener('click', loadCanvas, false);
+		   
+		   function saveCanvas() {
+            window.localStorage.canvasImage = canvas.toDataURL(); // Save the user's drawing to persistent local storage.
+          }
+		   function eraseCanvas() {
+            context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+          } 
+  
+           function loadCanvas() {
+            var img = new Image();
+			img.src = window.localStorage.canvasImage; 
+            img.onload = function() {
+              context.drawImage(img, 0, 0);
+			}
+		   }
+		   </script>
+ 
+ 
+ 
+ 
+
+<body background="cache/assets/images/background.jpg"/>
+
+<div class="footer">
+
+<img class="footerLogo"  src="cache/assets/images/logo.png">
+<p>© 1995-2018 Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved.</p>
+<a href="http://company.wizards.com/legal/terms-use">Terms of Use  		|</a>
+<a href="http://company.wizards.com/legal/wizards-coasts-privacy-policy">Privacy Policy  	 |</a> 
+<a href="http://company.wizards.com/legal/code-conduct">Code of Conduct  	 |</a> 
+<a href="http://wizards.custhelp.com">Customer Service  	 </a> 
+</div>
+</body>
+</html>

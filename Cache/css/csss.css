@@ -1,0 +1,84 @@
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+#nav{
+	
+	text-align: center;
+	margin:0px;
+	padding-top: 30px;
+	display: block;
+}
+nav ol {
+	
+	float:center;
+	display: flex;
+	justify-content: space-around;
+	background-color: #A95BD3;
+	padding-bottom:30px;
+	padding-top: 30px;
+	margin: 0px;
+	font-size: 20px;
+	font-style: italic;
+}
+
+
+.logo {
+	float: left;
+	padding: 0;
+	display: block;
+	margin: 0 auto;
+	max-height:15%;
+	max-width:15%;
+}
+
+#banner {
+	padding: 0;
+	display: block;
+	margin: 0 auto;
+	max-height:100%;
+	max-width:100%;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.slideshow {
+	float:center;
+	padding: 0;
+	display: block;
+	margin: 0 auto;
+	max-height:40%;
+	max-width:40%;
+}
+.footer {
+	background-color: #A95BD3;
+	position: static;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+}
+.footerLogo {
+	float: left;
+	padding: 0;
+	display: block;
+	margin: 0 auto;
+	max-height:100%;
+	max-width:100%;
+	padding-left: 30%
+}
+
+.twitter-timeline {
+	float:left;
+	padding-top:100px;
+}
+
+.youtube {
+	float: right;
+}

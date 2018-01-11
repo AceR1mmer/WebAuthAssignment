@@ -1,0 +1,110 @@
+#tabletop {
+	float: left;
+	width: 25%;
+}
+
+#digital {
+	float: left;
+	width: 25%;
+	padding-left: 12.5%;
+	padding-top: 10%;
+}
+
+#fiction {
+	float: right;
+	width: 25%;
+}
+
+#robert {
+	margin-top: 100px;
+
+	}
+	
+#overlay {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 2;
+	cursor: pointer;
+}
+
+#links {
+	
+	font-size: 50px;
+}
+
+#canvas {
+	float: left;
+	margin-left:20%;
+}
+	
+#overlay {
+    position: fixed;
+    display: none;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 2;
+    cursor: pointer;
+	transform: translate(20%, 10%);
+}
+
+#overlay2 {
+    position: fixed;
+    display: none;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 2;
+    cursor: pointer;
+	transform: translate(20%, 10%);
+}
+
+#overlay3 {
+    position: fixed;
+    display: none;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 2;
+    cursor: pointer;
+	transform: translate(20%, 5%);
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+	
+}
+
+#button1 {
+	transform: translate(-490%, 600%);
+}
+#button2 {
+	transform: translate(-250%, 300%);
+}
+#button3 {
+	transform: translate(-100%, 20%);
+}
